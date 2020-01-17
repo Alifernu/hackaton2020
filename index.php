@@ -29,14 +29,14 @@
         <div class="column is-one-third" id="noMap">
             <img src="images/urbanIsulaLogo.jpg" alt="Logo Urban Isula" />
             <div class="explanation">
-                <h5 class="title is-5">Visualisation 2D</h5>
+                <h5 id="titrefont" class="title is-5">Visualisation 2D</h5>
                 <br>
             </div>
             <div class="search">
                 <input class="input" id="adress" type="text" placeholder="Recherche"/>
                 <button class="button is-primary" onclick="search()">Recherche</button>
             </div>
-
+            <br>
             <div class="form">
                 <form  method="post" action="index3d.php">
                     <div id="lat" name="lat" style="display: none"></div>
@@ -52,6 +52,10 @@
                     <!-- </button> -->
                     </div>
                 </form>
+                <br>
+                <div class="vocal">
+                    <button class="button is-primary is-rounded">Download</button>
+                </div>
             </div>
         </div>
 

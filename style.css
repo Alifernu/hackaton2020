@@ -24,6 +24,7 @@
 
 .vocal {
     text-align: center;
+    padding-left: 40px;
 }
 
 #progress-bar {
@@ -58,6 +59,11 @@ h4 {
     text-align: center;
 }
 
+#titrefont{
+    font-family: 'Brush Script MT';
+    font-size: 280%;
+    color: #E8866B;
+}
 
 /* The Modal (background) */
 
@@ -111,3 +117,4 @@ h4 {
     text-decoration: none;
     cursor: pointer;
 }
+

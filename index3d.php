@@ -32,7 +32,7 @@
         <div class="column is-one-third" id="noMap">
             <img src="images/urbanIsulaLogo.jpg" alt="Logo Urban Isula" />
             <div class="explanation">
-                <h5 class="title is-5">Visualisation 3D</h5>
+                <h5 id="titrefont" class="title is-5">Visualisation 3D</h5>
                 <br>
                 <span id="lat" name="lat" style="display: none;"><?php echo floatval($lat) ?></span>
                 <span id="long" name="long" style="display: none;"><?php echo floatval($long) ?></span>
