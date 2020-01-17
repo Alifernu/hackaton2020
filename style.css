@@ -3,13 +3,14 @@
     z-index: 1;
 }
 
+#map3d {
+    height: 100vh;
+    z-index: 1;
+}
+
 #noMap {
     height: 100vh;
     z-index: 2;
-}
-
-#mapid {
-    height: 100vh;
 }
 
 #adress {

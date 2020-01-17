@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,73 +12,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="app.js"></script>
-
+  
     <title>Urban'Isula</title>
 </head>
 
 <body>
     <div id="myModal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
             <h4 class="title is-4">Pas sûr que ça marche</h4>        
         </div>
-
     </div>
-
     </div>
     <div class="columns is-gapless">
         <div class="column is-one-third" id="noMap">
+            <img src="images/urbanIsulaLogo.jpg" alt="Logo Urban Isula" />
             <div class="explanation">
-                <h5 class="title is-5">C'est payant mais c'est bien</h5>
-                <a class="button is-small is-info" onclick="showModal()">En savoir plus</a>
-
+                <h5 class="title is-5">Visualisation 2D</h5>
+                <br>
             </div>
             <div class="search">
-                <input class="input" id="adress" type="text" placeholder="Recherche">
+                <input class="input" id="adress" type="text" placeholder="Recherche"/>
                 <button class="button is-primary" onclick="search()">Recherche</button>
-
             </div>
 
             <div class="form">
-               
-
-                <div class="slidecontainer">
-                    <input type="range" min="100" max="10000" value="1000" class="slider" id="myRange">
-                    <h1>Taille demandée : <span id="demo"></span></h1>
-                  </div>
-                  
-                  <script>
-                  var slider = document.getElementById("myRange");
-                  var output = document.getElementById("demo");
-                  output.innerHTML = slider.value + 'm²';
-                  
-                  slider.oninput = function() {
-                    output.innerHTML = this.value + 'm²' ;
-                  }
-                  </script>
-
-                <div class="vocal">
-                    <button class="button is-primary is-rounded" onclick="record()">
-                                <span class="icon is-large">
-                                 <i class="fas fa-map"></i>
-                                </span>
-                                   <span>Convertir</span>
-                        </button>
-                    
-                </div>
-
+                <form  method="post" action="index3d.php">
+                    <div id="lat" name="lat" style="display: none"></div>
+                    <div id="long" name="long" style="display: none"></div>
+                    <div class="vocal">
+                    <!-- <button class="button is-primary is-rounded" > -->
+   
+                        <input class="button is-primary is-rounded " type="submit" value="3D">
+  
+                        <!-- <span class="icon is-large"> -->
+                            <!-- <i class="fas fa-map"></i> -->
+                        <!-- </span> -->
+                    <!-- </button> -->
+                    </div>
+                </form>
             </div>
         </div>
 
-        <div class="column is-two-third" id="map">
-            <div id="mapid">
-
-            </div>
+        <div class="column is-two-third">
+            <div id="map"></div>
         </div>
-    </div>
-
     </div>
 </body>
 
